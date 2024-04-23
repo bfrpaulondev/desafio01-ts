@@ -1,9 +1,18 @@
-import { CompanyAccount } from './class/CompanyAccount'
+import { CompanyAccount } from './class/CompanyAccount' 
 import { PeopleAccount } from './class/PeopleAccount'
+import { PetFoundAccount} from './class/PetFoundAccount';
 
-const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Nath', 10)
-console.log(peopleAccount)
-peopleAccount.deposit()
-const companyAccount: CompanyAccount = new CompanyAccount('DIO', 20)
-companyAccount.deposit()
+/* 
+const companyAccount: CompanyAccount = new CompanyAccount('Amanda' , 10)
+companyAccount.getLoan(2000)
 console.log(companyAccount)
+ 
+
+const peopleAccount: PeopleAccount = new PeopleAccount(1, 'Bruno', 10)
+console.log(peopleAccount)
+peopleAccount.withdraw(200) */
+
+
+const petFoundAccount: PetFoundAccount = new PetFoundAccount("zeze", 12)
+console.log(petFoundAccount)
+petFoundAccount.deposit(200)
